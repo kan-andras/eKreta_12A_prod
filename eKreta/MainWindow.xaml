@@ -45,7 +45,7 @@
                 <ListViewItem
                     x:Name="teremekMenu"
                     Content="Termek"
-                    MouseLeftButtonUp="teremekMenu_MouseLeftButtonUp"
+                    MouseLeftButtonUp="termekMenu_MouseLeftButtonUp"
                     Style="{StaticResource ResourceKey=ListItemStyle}" />
                 <ListViewItem
                     x:Name="felhasznalokMenu"

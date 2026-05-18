@@ -24,5 +24,10 @@ namespace eKreta.UserControls
         {
             InitializeComponent();
         }
+
+        private void datagridFelhasznalo_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

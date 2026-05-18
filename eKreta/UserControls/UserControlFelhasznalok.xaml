@@ -6,10 +6,27 @@
     xmlns:local="clr-namespace:eKreta.UserControls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Width="1500"
-    Height="900"
-    HorizontalAlignment="Stretch"
-    VerticalAlignment="Stretch">
+    Height="900">
     <StackPanel>
-        <DataGrid Width="1500" Height="500" />
+        <DataGrid x:Name="datagridFelhasznalo" Width="1100" Height="600" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" IsReadOnly="True" SelectionChanged="datagridFelhasznalo_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID:" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="Felhasználónév:" Binding="{Binding FelhasznaloNev}" />
+                <DataGridTextColumn Header="Teljes név:" Binding="{Binding TeljesNev}" />
+                <DataGridTextColumn Header="Jelszó:" Binding="{Binding Jelszo}" />
+                <DataGridTextColumn Header="Jogosultság:" Binding="{Binding Szerepkor}" />
+                <DataGridTextColumn Header="Jogosultság neve:" Binding="{Binding SzerepkorNev}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <WrapPanel>
+            <StackPanel Margin="10">
+                <TextBlock Text="Felhasználónév:" />
+                <TextBox x:Name="felhasznaloNevTxt" Width="200" />
+            </StackPanel>
+            <StackPanel Margin="10">
+                <TextBlock Text="Teljes név:" />
+                <TextBox x:Name="teljesNevTxt" Width="200" />
+            </StackPanel>
+        </WrapPanel>
     </StackPanel>
 </UserControl>
