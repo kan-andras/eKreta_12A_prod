@@ -20,8 +20,8 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Id}" Header="ID:" />
                 <DataGridTextColumn Binding="{Binding FelhasznaloNev}" Header="Felhasználónév:" />
-                <DataGridTextColumn Binding="{Binding TeljesNev}" Header="Teljes név:" />
-                <DataGridTextColumn Binding="{Binding Jelszo}" Header="Jelszó:" />
+                <DataGridTextColumn Binding="{Binding Jelszo}" Header="Teljes név:" />
+                <DataGridTextColumn Binding="{Binding TeljesNev}" Header="Jelszó:" />
                 <DataGridTextColumn Binding="{Binding Szerepkor}" Header="Jogosultság:" />
                 <DataGridTextColumn Binding="{Binding SzerepkorNev}" Header="Jogosultság neve:" />
             </DataGrid.Columns>

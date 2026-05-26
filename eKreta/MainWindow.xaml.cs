@@ -2,13 +2,10 @@
 ﻿using eKreta.UserControls;
 using System.Windows;
 using System.Windows.Input;
-
 ﻿using System.Text;
-using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
@@ -57,5 +54,10 @@ namespace eKreta
             App.Current.Shutdown();
         }
 
+        private void teremekMenu_MouseLeftButtonUp_1(object sender, MouseButtonEventArgs e)
+        {
+            feladatPanel.Children.Clear();
+            feladatPanel.Children.Add(new UserControls.UserControlTermek());
+        }
     }
 }
